@@ -18,13 +18,15 @@
 .h1-div{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .h1-div div, .h1-div a{
+    width: 30%;
     //this styling is for the 'Financer' text and premium, products, pricing
     display: flex;
     padding: 2%;
-    width: 100%;
+    width: 50%;
     border-bottom: 2px solid #1DB954;
     text-decoration: none;
 
@@ -47,14 +49,15 @@
     }
 
 
-    h3 {
+    h3,a {
         color: white;
         font-family: 'Roboto', sans-serif;
         font-size: .9rem;
+        border: none;
 
 
     }
-    h3:hover{
+    h3:hover, a:hover{
         color:#98AFC7;
     }
 }
@@ -66,6 +69,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-decoration: none;
 }
 
 
