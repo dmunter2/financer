@@ -131,18 +131,22 @@ table {
   flex-direction: column;
   background-color: #36454F;
   height: 100%;
+  width: 100;
 }
 .h1-div {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
+.h1-div a {
+  width: 20%;
+}
 .h1-div div,
 .h1-div a {
-  width: 30%;
   display: flex;
+  justify-content: space-between;
   padding: 2%;
-  width: 50%;
+  width: 100px;
   border-bottom: 2px solid #1DB954;
   text-decoration: none;
 }
@@ -178,7 +182,6 @@ table {
   color: #98AFC7;
 }
 .a-container {
-  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -222,6 +225,11 @@ button {
 button:hover {
   background-color: #98AFC7;
   color: white;
+}
+@media (max-width: 600px) {
+  .a-container a {
+    border: 1px solid red;
+  }
 }
 .footer-container {
   background-color: #36454F;
